@@ -1,0 +1,78 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #ffffff;
+    font-size: 18px;
+    color: #002980;
+    text-align: center;
+  }
+  
+  .login-container {
+    display: flex;
+    width: 800px;
+    height: 600px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .login-form, .welcome-container {
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .login-fields input {
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+    align-items: center;
+
+    padding: 12px;
+    border: #f1f1f1;
+    background-color: rgb(232, 232, 232);
+  }
+  
+  .login button {
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+    background-color: #002980;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .login button:hover {
+    background-color: #0056b3;
+  }
+  
+  .welcome-container {
+    background: linear-gradient(90deg, #002980 0%, #0049BA 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    font-size: 12px;
+  }
+  
+  .switch.login.button {
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 10px;
+    width: 140px;
+    height: 35px;
+    font-size: 15px;
+    border: solid 1px #ffffff;
+  }
+  .switch.login.button:hover {
+    background-color: #f1f1f1;
+    color: #002980;
+  }
+  

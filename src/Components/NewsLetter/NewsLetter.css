@@ -1,0 +1,121 @@
+.newsletter{
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 140px;
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    gap: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px 0px #e3e3e3;
+}
+
+.newsletter h1{
+    color: #454545;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Archivo Black', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*move up the h1*/
+    
+}
+
+.newsletter p{
+    color: #454545;
+    font-size: 20px;
+    font-family: 'Popins', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.newsletter div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    width: 730px;
+    height: 60px;
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+}
+
+.newsletter input{
+    width: 465px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.newsletter button{
+    width: 210px;
+    height: 70px;
+    border-radius: 80px;
+    background: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+/* Mobile View Styles for .newsletter section */
+@media only screen and (max-width: 600px) {
+    .newsletter {
+        width: 90%; /* Adjust width for mobile */
+        height: auto; /* Adjust height to auto for mobile */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        padding: 20px; /* Adjust padding for mobile */
+        margin-bottom: 100px; /* Adjust margin bottom for mobile */
+        background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+        gap: 20px; /* Adjust gap between elements for mobile */
+        border-radius: 20px; /* Adjust border radius for mobile */
+        box-shadow: 0px 0px 10px 0px #e3e3e3; /* Adjust box shadow for mobile */
+    }
+
+    .newsletter h1 {
+        font-size: 28px; /* Decrease font size for mobile */
+        margin-top: 0; /* Remove margin top for mobile */
+        margin-bottom: 10px; /* Adjust margin bottom for mobile */
+        text-align: center; /* Center align text for mobile */
+    }
+
+    .newsletter p {
+        font-size: 16px; /* Decrease font size for mobile */
+        margin-top: 0; /* Remove margin top for mobile */
+        margin-bottom: 20px; /* Adjust margin bottom for mobile */
+        text-align: center; /* Center align text for mobile */
+    }
+
+    .newsletter div {
+        width: 100%; /* Adjust width for mobile */
+        max-width: 350px; /* Adjust max width for mobile */
+        height: auto; /* Adjust height to auto for mobile */
+        flex-direction: column; /* Change flex direction to column for mobile */
+        align-items: stretch; /* Stretch items for mobile */
+        border: 1px solid #e3e3e3; /* Adjust border for mobile */
+        border-radius: 20px; /* Adjust border radius for mobile */
+    }
+
+    .newsletter input {
+        width: calc(100% - 30px); /* Adjust width for mobile */
+        margin: 10px 15px; /* Adjust margin for mobile */
+    }
+
+    .newsletter button {
+        width: calc(100% - 30px); /* Adjust width for mobile */
+        margin: 10px 15px; /* Adjust margin for mobile */
+    }
+}

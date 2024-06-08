@@ -1,0 +1,268 @@
+.newcollection {
+  padding: 10px;
+  margin-bottom: 100px;
+  margin-top: 250px;
+}
+
+.newcollection h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #171717;
+  font-size: 50px;
+  font-weight: 800;
+  margin-top:-200px ;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.newcollection hr {
+  width: 50%;
+  margin: 0 auto -50px;
+}
+
+.collections {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Add some space between the boxes */
+}
+
+.left-box {
+  flex: 1;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 100px;
+  padding-top: -20px;
+  padding-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 210px;
+  color: white;
+  position: relative;
+  border-radius: 20px; /* Make the corners round */
+  min-height: 600px; /* Adjust this height as needed */
+}
+
+
+.right-box {
+  flex: 1;
+  display: flex;
+  padding-top: 100px;
+  margin-right: 170px;
+  padding-bottom: 100px;
+  flex-direction: column;
+  gap: 30px; /* Add some space between the boxes */
+}
+
+.bottom-box {
+  flex: 1;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  margin-top: -70px;
+  margin-left: 200px;
+  margin-right: 200px;
+  color: white;
+  position: relative;
+  border-radius: 20px; /* Make the corners round */
+  border-radius: 20px; /* Make the corners round */
+  min-height: 400px; /* Adjust this height as needed */
+  border: 2px solid rgb(234, 234, 234); /* Add black border */
+}
+
+.right-box .item {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 500px;
+  padding: 100px;
+  color: white;
+  position: relative;
+  border-radius: 20px; /* Make the corners round */
+  min-height: 180px; /* Adjust this height as needed */
+}
+
+.item-details {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px; /* Optional: round the corners of the details box */
+}
+
+.shirt {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 200px;
+  text-align: center;
+  border-radius: 10px; /* Optional: round the corners of the details box */
+}
+
+.item h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+
+
+/* Tablet View Styles */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .newcollection {
+    padding: 10px;
+    margin-bottom: 75px;
+  }
+
+  .newcollection h1 {
+    font-size: 40px;
+    margin-top: -150px;
+  }
+
+  .newcollection hr {
+    width: 60%;
+    margin: 0 auto -40px;
+  }
+
+  .collections {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .left-box, .bottom-box {
+    margin: 50px auto;
+    min-height: 400px;
+    width: 85%;
+  }
+
+  .right-box {
+    margin-top: -15%;
+    margin-bottom: -15%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    min-height: 900px;
+    width: 100%;
+  }
+
+  .right-box .item {
+    width: 100%;
+    padding: 40px;
+    min-height: 150px;
+  }
+
+  .shirt {
+    margin-bottom: 150px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .newcollection {
+    padding: 10px;
+    margin-bottom: 75px;
+  }
+
+  .newcollection h1 {
+    font-size: 35px;
+    margin-top: -120px;
+  }
+
+  .newcollection hr {
+    width: 60%;
+    margin: 0 auto -40px;
+  }
+
+  .collections {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .left-box, .bottom-box {
+    margin: 50px auto;
+    min-height: 300px;
+    width: 90%;
+  }
+
+  .right-box {
+    margin-top: -17%;
+    margin-bottom: -17%;
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: 800px;
+    width: 100%;
+  }
+
+  .right-box .item {
+    width: 100%;
+    padding: 30px;
+    min-height: 150px;
+  }
+
+  .shirt {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .newcollection {
+    padding: 10px;
+    margin-bottom: 75px;
+    /* margin-top: 250px; */
+  }
+
+  .newcollection h1 {
+    font-size: 30px;
+    /* margin-top: -120px; */
+    margin-bottom: 25px;
+  }
+
+  .newcollection hr {
+    width: 60%;
+    margin: 0 auto -40px;
+  }
+
+  .collections {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .left-box, .bottom-box {
+    margin: 50px auto;
+    min-height: 300px;
+    width: 90%;
+  }
+
+  .right-box {
+    margin-top: -32%;
+    margin-bottom: -32%;
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: 800px;
+    width: 100%;
+  }
+
+  .right-box .item {
+    width: 100%;
+    padding: 30px;
+    min-height: 150px;
+  }
+
+  .shirt {
+    margin-bottom: 100px;
+  }
+  .item-details h2{
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+

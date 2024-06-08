@@ -1,0 +1,333 @@
+/* Profile container */
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    /* height: 100vh; */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    /* margin-left: 150px;
+    margin-right: 150px; */
+    /* Center the whole box */
+    border: 1px solid #00000047;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px #00000036;
+}
+
+/* Sidebar */
+.sidebar {
+    /* width: 300px; Adjust width as needed */
+    background-color: #ffffff; /* Sidebar background color */
+    padding: 50px;
+    display: flex;
+    flex-direction: column; /* Adjust the direction to column */
+    align-items: center; /* Center the items horizontally */
+    border: 1px solid #00000036;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #00000036;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.sidebar hr {
+    width: 120%;
+    margin: 10px 0;
+    border: 1px solid #bababa;
+    transition: all 0.3s ease; /* Smooth transition */
+    align-items: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    width: 200px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.sidebar li {
+    margin-bottom: 50px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth transition */
+    font-weight: 400; /* Style the active tab */
+    border: 2px solid #000000;
+    box-shadow: 3px 3px 3px rgb(109, 112, 113);
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-left: none;
+    /* Make the text be in middle of the box */
+    text-align: center;
+    justify-content: center;
+    padding: 18px;
+    padding-right: 0px;
+    margin-left: -60px;
+    width: 280px;
+    height: 70px;
+
+}
+
+.sidebar li.active {
+    font-weight: 400; /* Style the active tab */
+    border: 1px solid #000000;;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    /* Make the text be in middle of the box */
+    text-align: center;
+    justify-content: center;
+    padding: 18px;
+    padding-right: 0px;
+    margin-left: -60px;
+    width: 280px;
+    height: 70px;
+    /* Change the color of the text */
+    color: #ffffff;
+    background: linear-gradient(90deg, #002980 0%, #0049BA 100%);
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Tab content */
+.tab-content {
+    flex-grow: 1; /* Allow the tab content to grow to fill remaining space */
+    padding: 40px;
+    background-color: #fff; /* Content background color */
+    border-left: 1px solid #bababa; /* Add a border to separate from sidebar */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.profile-info {
+    margin-top: -120px;
+    margin-bottom: 30px; /* Add some bottom margin */
+    text-align: center; /* Center the text */
+    transition: all 0.3s ease; /* Smooth transition */
+    font-size: 18px;
+}
+
+.profile-info img{
+    margin-top: 120px;
+    width: 120px;
+    height:120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border:1px solid#000000;
+    transition: all 0.3s ease; /* Smooth transition */
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-photo img {
+    width: 80px; /* Adjust the size of the profile photo */
+    height: 80px;
+    border-radius: 50%; /* Make the photo circular */
+    margin-bottom: 10px; /* Add some bottom margin */
+    margin-top: 10px;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Style the username */
+.profile-username {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.with-indicator {
+    position: relative; /* Ensure red dot indicator stays relative to the Messages tab */
+}
+
+.red-dot {
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Adjust as needed to position the red dot */
+    transform: translate(50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.notification-item {
+    position: relative; /* Set position to relative to position the icon */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.mark-as-read {
+    position: absolute;
+    top: 5px; /* Adjust the top position as needed */
+    right: 5px; /* Adjust the right position as needed */
+    cursor: pointer; /* Add cursor pointer for interaction */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+    .profile-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .sidebar {
+        padding: 30px;
+    }
+
+    .sidebar ul {
+        font-size: 16px;
+        width: 180px;
+    }
+
+    .sidebar li {
+        margin-bottom: 40px;
+        padding: 16px;
+        width: 220px;
+        height: 60px;
+    }
+
+    .sidebar li.active {
+        padding: 16px;
+        width: 220px;
+        height: 60px;
+    }
+
+    .tab-content {
+        padding: 30px;
+    }
+
+    .profile-info {
+        font-size: 16px;
+    }
+
+    .profile-info img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-photo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .profile-username {
+        font-size: 16px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .profile-container {
+        grid-template-columns: 1fr 4fr;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .sidebar {
+        padding: 20px;
+    }
+
+    .sidebar ul {
+        font-size: 14px;
+        width: 160px;
+    }
+
+    .sidebar li {
+        margin-bottom: 30px;
+        padding: 14px;
+        width: 200px;
+        height: 50px;
+    }
+
+    .sidebar li.active {
+        padding: 14px;
+        width: 200px;
+        height: 50px;
+    }
+
+    .tab-content {
+        padding: 20px;
+    }
+
+    .profile-info {
+        font-size: 14px;
+    }
+
+    .profile-info img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-photo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile-username {
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile styles */
+@media (max-width: 480px) {
+    .profile-container {
+        grid-template-columns: 1fr;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .sidebar {
+        padding: 10px;
+    }
+
+    .sidebar ul {
+        font-size: 12px;
+        width: 140px;
+    }
+
+    .sidebar li {
+        margin-bottom: 20px;
+        padding: 12px;
+        width: 220px;
+        height: 40px;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+    }
+
+    .sidebar li.active {
+        padding: 12px;
+        width: 220px;
+        height: 40px;
+        border-radius: 40px;
+    }
+
+    .tab-content {
+        padding: 10px;
+    }
+
+    .profile-info {
+        font-size: 14px;
+    }
+
+    .profile-info img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-photo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profile-username {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,321 @@
+/* UserProfile.css */
+
+.profile {
+    padding: 40px;
+    /* increase width to fit the box */
+    /* width: 950px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    /* margin-top: 80px;
+    margin-left: 10%;
+    margin-right: 10%; */
+}
+
+/*give me the code for style the profile photo of the user*/
+
+
+.userAcc-header{
+    /* padding: 0px; */
+    /* margin-right: 600px;
+    height: 10px;
+    width: 300px; */
+    /*make the bg colour fade away from left*/
+    /* background: linear-gradient(90deg,#002980 0%, #0049BA 100%); */
+    /* add another color to the gradient */
+    width: 100%;
+    color: #000000; /* White text color */
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px 0 20px 20px; /* Rounded corners on the top */
+    /* display: flex; */
+}
+
+.profile-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 100px;
+    position: relative; /* Ensure the container is positioned relatively */
+  }
+  
+  .profile-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    scale: 2.5;
+  }
+  
+  .profile-photo label {
+    cursor: pointer;
+  }
+  
+  .profile-photo input[type="file"] {
+    display: none;
+  }
+  
+  .profile-photo button {
+    overflow: hidden;
+    border: 1px solid #07006f;
+    color: #07006f;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+  
+  .add-product-btn {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .profile-photo button:hover {
+    background: linear-gradient(90deg, #002980 0%, #0049BA 100%);
+    color: #fff;
+    transition: 0.2s ease-in;
+  }
+  
+  .profile-photo p {
+    position: absolute;
+    bottom: 0; /* Align to the bottom of the image */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: #0000003a; /* Semi-transparent black */
+    color: #ffffffdc; /* White with opacity */
+    text-align: center;
+    font-size: 15px;
+    padding: 25px 0; /* Padding for better appearance */
+    border-bottom-left-radius: 100px; /* Matching the bottom border radius of the image */
+    border-bottom-right-radius: 100px; /* Matching the bottom border radius of the image */
+    box-sizing: border-box; /* Ensure padding is included in element's dimensions */
+    z-index: 1;
+    margin-bottom: 95px;
+    width: 200px;
+    height: 100px; /* as the half of the width */
+    border-bottom: 0;
+  }
+  
+  
+
+.profile-details {
+    margin-top: -35px;
+    width: 100%;
+    max-width: 400px; /* Limit the width of user details */
+    text-align: center;
+}
+
+.profile-name p,
+.profile-email p {
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.btn-modal {
+  padding: 10px 20px;
+  /* display: block; */
+  font-size: 18px;
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  background: linear-gradient(90deg, #002980 0%, #0049BA 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+} */
+
+.overlay {
+    /* background: rgba(49,49,49,0.8); */
+    cursor: pointer;
+}
+
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.check-btn,
+.close-modal {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.check-btn:hover,
+.close-modal:hover {
+    background-color: #0056b3;
+}
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 9999;
+}
+
+
+@media (max-width: 768px) {
+  .profile {
+      padding: 20px;
+  }
+  
+  .userAcc-header {
+      font-size: 30px;
+  }
+  
+  .profile-photo {
+      margin-top: 50px;
+  }
+  
+  .profile-photo img {
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+  }
+  
+  .profile-photo button {
+      padding: 8px 16px;
+      margin-top: 60px;
+  }
+  
+  .btn-modal {
+      font-size: 16px;
+      width: 180px;
+      height: 45px;
+  }
+  
+  .modal-content {
+      max-width: 500px;
+      padding: 10px 20px;
+  }
+  
+  .modal-content input {
+      padding: 8px;
+  }
+  
+  .check-btn,
+  .close-modal {
+      padding: 8px 16px;
+  }
+  .profile-photo p {
+    width: 151px;
+    height: 77px;
+    margin-bottom: 85px;
+    border-bottom-left-radius: 77px; /* Matching the bottom border radius of the image */
+    border-bottom-right-radius: 77px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .profile {
+      padding: 10px;
+  }
+  
+  .userAcc-header {
+      font-size: 24px;
+  }
+  
+  .profile-photo {
+      margin-top: 30px;
+  }
+  
+  .profile-photo img {
+      width: 80px;
+      height: 80px;
+      border-radius: 80px;
+  }
+  
+  .profile-photo button {
+      padding: 6px 12px;
+      margin-top: 40px;
+  }
+  
+  .btn-modal {
+      font-size: 14px;
+      width: 200px;
+      height: 40px;
+      
+  }
+  
+  .modal-content {
+      max-width: 400px;
+      padding: 8px 16px;
+  }
+  
+  .modal-content input {
+      padding: 6px;
+  }
+  
+  .check-btn,
+  .close-modal {
+      padding: 6px 12px;
+  }
+
+  .profile-photo p {
+    width: 127px;
+    height: 64px;
+    margin-bottom: 68px;
+    border-bottom-left-radius: 80px; /* Matching the bottom border radius of the image */
+    border-bottom-right-radius: 80px;
+    font-size: 12px;
+  }
+
+  .userAcc-header {
+    display: inline;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

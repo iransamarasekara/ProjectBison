@@ -1,0 +1,31 @@
+.breadcrum{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 8px;
+    color: #5e5e5e;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 80px;
+    /* margin: 80px 170px 0px 170px; */
+    text-transform: capitalize;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .breadcrum {
+        margin: 40px 100px; /* Adjusted margin for tablets */
+        font-size: 15px; /* Reduced font size for tablets */
+        gap: 6px; /* Reduced gap for tablets */
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .breadcrum {
+        margin: 50px 50px; /* Adjusted margin for mobile */
+        font-size: 13px; /* Reduced font size for mobile */
+        gap: 4px; /* Reduced gap for mobile */
+    }
+}

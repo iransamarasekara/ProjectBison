@@ -1,0 +1,334 @@
+/* General styles for the order confirmation page */
+.maindiv{
+    margin-top: 80px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.orderconfirmation {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr 0.2fr;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 60px;
+}
+
+/* Styles for the left column */
+.orderconfirmation-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+/* Styles for the right column */
+.orderconfirmation-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Styles for the user's information section */
+.orderconfirmation-first,
+.orderconfirmation-payment,
+.orderconfirmation-sizes {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.orderconfirmation-first-item {
+    display: grid;
+    grid-template-columns: 0.8fr 5fr;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.orderconfirmation-first-item-name {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderconfirmation-first-item-mail {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderconfirmation-first-item-total {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderconfirmation-first-item p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e2e2e2;
+    margin: 10px 0;
+}
+
+/* Styles for form fields and buttons */
+.orderconfirmation-itemfield,
+.orderconfirmation-itemfield-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    align-items: center;
+}
+
+.orderconfirmation-itemfield p,
+.orderconfirmation-itemfield-btn p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.orderconfirmation-itemfield input,
+.orderconfirmation-itemfield-btn button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+.orderconfirmation-itemfield-btn button {
+    cursor: pointer;
+}
+
+.add-order-btn {
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.orderconfirmation-itemfield input:focus,
+.orderconfirmation-itemfield-btn button:focus,
+.add-order-btn:focus {
+    border-color: #0049ba;
+    outline: none;
+}
+
+.add-order-btn {
+    background-color: #0049ba;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.add-order-btn:hover {
+    background-color: #003080;
+}
+
+/* Styles for the modal to upload the bank slip */
+.orderconfirmation-second {
+    width: 100%;
+    /* margin-left: 10%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.orderconfirmation-thumnail-img {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: border-color 0.3s;
+}
+
+.orderconfirmation-thumnail-img:hover {
+    border-color: #0049ba;
+}
+
+/* Styles for sizes and colors section */
+.orderconfirmation-sizes p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.orderconfirmation-sizes ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.orderconfirmation-sizes li {
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.cartitems-remove-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.active-modal {
+    overflow: hidden;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+    .orderconfirmation {
+        grid-template-columns: 1fr 0.4fr;
+        gap: 20px;
+    }
+
+    .orderconfirmation-right {
+        margin-left: 0;
+    }
+
+    .orderconfirmation-itemfield,
+    .orderconfirmation-itemfield-btn {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .add-order-btn {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .orderconfirmation-second {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .orderconfirmation-first-item p,
+    .orderconfirmation-itemfield p,
+    .orderconfirmation-itemfield-btn p {
+        font-size: 14px;
+    }
+
+    .orderconfirmation-itemfield input,
+    .orderconfirmation-itemfield-btn button,
+    .add-order-btn {
+        font-size: 14px;
+    }
+
+    .orderconfirmation-sizes p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .orderconfirmation {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .orderconfirmation-first,
+    .orderconfirmation-payment,
+    .orderconfirmation-sizes {
+        padding: 15px;
+    }
+
+    .orderconfirmation-first-item p,
+    .orderconfirmation-itemfield p,
+    .orderconfirmation-itemfield-btn p {
+        font-size: 12px;
+    }
+
+    .orderconfirmation-itemfield input,
+    .orderconfirmation-itemfield-btn button,
+    .add-order-btn {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .orderconfirmation-thumnail-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .orderconfirmation-sizes p {
+        font-size: 12px;
+    }
+}
+
+/* Small Mobile styles */
+@media (max-width: 600px) {
+    .orderconfirmation {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .orderconfirmation-first,
+    .orderconfirmation-payment,
+    .orderconfirmation-sizes {
+        padding: 10px;
+    }
+
+    .orderconfirmation-first-item p,
+    .orderconfirmation-itemfield p,
+    .orderconfirmation-itemfield-btn p {
+        font-size: 14px;
+    }
+
+    .orderconfirmation-itemfield input,
+    .orderconfirmation-itemfield-btn button,
+    .add-order-btn {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .orderconfirmation-thumnail-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .orderconfirmation-sizes p {
+        font-size: 14px;
+    }
+    
+    .orderconfirmation-sizes ul {
+        gap: 5px;
+    }
+
+    .orderconfirmation-sizes li {
+        padding: 3px 6px;
+    }
+}
